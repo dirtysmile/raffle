@@ -2,7 +2,7 @@ import telegram
 import crawling_info
 
 
-def sendError(value):
+def send_error(value):
     bot = telegram.Bot(crawling_info.get_instagram_bot_token())
     bot.telegram(chat_id=crawling_info.bot(), text=value)
 
@@ -12,6 +12,8 @@ def send_telgm(recent):
 
     for re in recent:
         send_text += '<b>[ ' + re['title'] + ' ]</b>\n' + re['url'] + '\n\n'
+
+    print(send_text)
 
     telgm_token = crawling_info.get_instagram_bot_token()
     bot = telegram.Bot(token=telgm_token)

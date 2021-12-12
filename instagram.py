@@ -142,7 +142,7 @@ def login(driver):
 
     time.sleep(10)
 
-    if(driver.current_url == login_url):
+    if driver.current_url == login_url:
         print('로그인 실패 30분후 재시도')
         time.sleep(1800)
         login(driver)
@@ -169,10 +169,10 @@ def get_docs(driver, url):
 
         links = driver.find_elements_by_xpath("//a[@href]")
 
-        if(len(links) > 0):
+        if len(links) > 0:
             for link in links:
                 link_href = link.get_attribute("href")
-                if(link_href.find('docs.google.com') > 0):
+                if link_href.find('docs.google.com') > 0:
                     docs_url = link_href.split('=')[1].replace(
                         "%2F", "/").replace("%3A", ":").split("%3")[0]
 
@@ -185,6 +185,14 @@ def get_docs(driver, url):
 
 
 def run_01(driver, instar_nike_pages, recent_histories, previous_histories):
+    run(driver, instar_nike_pages, recent_histories, previous_histories)
+
+
+def run_31(driver, instar_nike_pages, recent_histories, previous_histories):
+    run(driver, instar_nike_pages, recent_histories, previous_histories)
+
+
+def run(driver, instar_nike_pages, recent_histories, previous_histories):
     global err_cnt
     now = datetime.datetime.now()
     print(now)
@@ -193,22 +201,14 @@ def run_01(driver, instar_nike_pages, recent_histories, previous_histories):
         docs = get_docs(driver, link['url'])
         print(docs)
 
-        if(docs != False and docs[1] != ''):
+        if docs != False and docs[1] != '':
             if docs[1] not in previous_histories:
                 previous_histories.append(docs[1])
                 recent_histories.append({'title': docs[0], 'url': docs[1]})
 
-    if(err_cnt > 0):
-        send_telegram.send_telegram.sendError('크롤링 실패')
+    if err_cnt > 0:
+        send_telegram.send_error('크롤링 실패')
         err_cnt = 0
 
-    print(recent_histories)
-
-    if(len(recent_histories) > 0):
+    if len(recent_histories) > 0:
         send_telegram.send_telgm(recent_histories)
-
-    print(previous_histories)
-
-
-def run_31():
-    print('31')
