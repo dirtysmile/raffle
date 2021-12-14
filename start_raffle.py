@@ -1,22 +1,37 @@
 from selenium import webdriver
 import time
 import schedule
+import sys
+import logging
 
 import open_chrome
 import instagram
+import eomisae
+import simple_logger
+import sneakerhouse
 
 
-driver = open_chrome.connect()
-driver = instagram.login(driver)
+def handle_exception(exc_type, exc_value, exc_traceback):
+    logger = logging.getLogger("rich")
 
-schedule.clear()
-schedule.every().hour.at(":01").do(instagram.run_01, driver, instagram.instar_nike_pages,
-                                   instagram.recent_histories, instagram.previous_histories)
-schedule.every().hour.at(":31").do(instagram.run_31, driver, instagram.instar_nike_pages,
-                                   instagram.recent_histories, instagram.previous_histories)
-# schedule.every(10).minutes.do(instagram.run_01, driver, instagram.instar_nike_pages,
-#   instagram.recent_histories, instagram.previous_histories)
+    logger.error("Unexpected exception", exc_info=(
+        exc_type, exc_value, exc_traceback))
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+
+if __name__ == '__main__':
+    logger = simple_logger.set_logger('test.log')
+    sys.excepthook = handle_exception
+
+    driver = open_chrome.connect()
+
+    schedule.clear()
+    schedule.every(2).minutes.do(eomisae.run)
+    schedule.every(2).minutes.do(sneakerhouse.run, driver)
+    # schedule.every(10).seconds.do(eomisae.run)
+
+    eomisae.run()
+    sneakerhouse.run(driver)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)

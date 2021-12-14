@@ -16,8 +16,12 @@ def get_instagram_bot_token():
     return json_data['instagram_bot_token']
 
 
-def channel():
-    return json_data['channel']
+def eomisae_channel():
+    return json_data['eomisae_channel']
+
+
+def sneakerhouse_channel():
+    return json_data['sneakerhouse_channel']
 
 
 def bot():

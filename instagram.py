@@ -184,14 +184,6 @@ def get_docs(driver, url):
         return False
 
 
-def run_01(driver, instar_nike_pages, recent_histories, previous_histories):
-    run(driver, instar_nike_pages, recent_histories, previous_histories)
-
-
-def run_31(driver, instar_nike_pages, recent_histories, previous_histories):
-    run(driver, instar_nike_pages, recent_histories, previous_histories)
-
-
 def run(driver, instar_nike_pages, recent_histories, previous_histories):
     global err_cnt
     now = datetime.datetime.now()
