@@ -24,6 +24,10 @@ def sneakerhouse_channel():
     return json_data['sneakerhouse_channel']
 
 
+def nikesnkrs_channel():
+    return json_data['nikesnkrs_channel']
+
+
 def bot():
     return json_data['bot']
 
