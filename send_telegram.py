@@ -30,6 +30,15 @@ def send_telgm(recent, channel):
     recent.clear()
 
 
+def send_telgm_string(value, channel):
+    logger.info(value)
+
+    telgm_token = crawling_info.get_instagram_bot_token()
+    bot = telegram.Bot(token=telgm_token)
+    bot.sendMessage(chat_id=channel, text=value,
+                    parse_mode='HTML', disable_web_page_preview=True)
+
+
 def send_telgm_for_nike(channel):
     send_text = '<b>[ SNKRS가 업데이트 되었습니다 ]</b>\n' + \
         'https://www.nike.com/kr/launch/?type=upcoming'

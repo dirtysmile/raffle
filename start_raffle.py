@@ -29,9 +29,11 @@ if __name__ == '__main__':
     # [어미새] 2분
     schedule.every(2).minutes.do(eomisae.run)
 
-    # [나이키 SNKRS] 12시 18시
+    # [나이키 SNKRS] 12시 18시 19시
     schedule.every().day.at("12:00:00").do(nikesnkrs.run)
     schedule.every().day.at("18:00:00").do(nikesnkrs.run)
+
+    schedule.every().day.at("19:00:00").do(nikesnkrs.comming)
 
     # [스니커 하우스] 10시 14시 17시 20시
     # schedule.every().day.at("10:00:00").do(sneakerhouse.run, driver)

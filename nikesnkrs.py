@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import datetime as dt
 
 
 import open_chrome
@@ -31,7 +32,7 @@ def init_link():
         tmp_t = titleAndTime[i].text
         tmp_l = linkAndDay[i].text
 
-        if(tmp_t != '' and tmp_t != 'Coming Soon'):
+        if(tmp_t != '' and tmp_t != 'Coming Soon' and tmp_t != 'Sold Out'):
             pre_links.append(
                 {'title': tmp_t.split('\n')[1],
                  'url': linkAndDay[i].get_attribute("href"),
@@ -61,7 +62,7 @@ def check_link():
         tmp_t = titleAndTime[i].text
         tmp_l = linkAndDay[i].text
 
-        if(tmp_t != '' and tmp_t != 'Coming Soon'):
+        if(tmp_t != '' and tmp_t != 'Coming Soon' and tmp_t != 'Sold Out'):
             now_links.append(
                 {'title': tmp_t.split('\n')[1],
                  'url': linkAndDay[i].get_attribute("href"),
@@ -80,6 +81,7 @@ def compare_link():
     new_link = []
     new = []
     find = []
+    send_link = []
 
     global pre_links
     global now_links
@@ -100,10 +102,38 @@ def compare_link():
 
     if(len(new_index) > 0):
         for n in new_index:
+            send_link.append(now_links[n])
             pre_links.append(now_links[n])
-        send_telegram.send_telgm_for_nike(crawling_info.nikesnkrs_channel())
+
+        send_massage(send_link)
 
         now_links = []
+
+
+def send_massage(link):
+    coming_soon = []
+    draw = []
+    send_stirng = 'SNKRS가 업데이트 되었습니다.\n'
+
+    for t in link:
+        if t['time'].find('출시') > 0:
+            coming_soon.append(t)
+        else:
+            draw.append(t)
+
+    if len(draw) > 0:
+        send_stirng += '<b>[ 응모 예정 ]</b>\n'
+        for d in draw:
+            send_stirng += d['title']+'\n'
+
+    if len(coming_soon) > 0:
+        send_stirng += '\n<b>[ 출시 예정 ]</b>\n'
+        for c in coming_soon:
+            send_stirng += c['title']+'\n'
+
+    send_stirng += "\n<b>[ URL ]</b>\nhttps://www.nike.com/kr/launch/?type=upcoming"
+    send_telegram.send_telgm_string(
+        send_stirng, crawling_info.nikesnkrs_channel())
 
 
 def run():
@@ -113,5 +143,43 @@ def run():
         check_link()
 
 
-def release_notice():
-    print('a')
+def comming():
+
+    date = dt.datetime.now()
+
+    day = date.day+1
+    month = date.month
+
+    day_month = str(month)+'월 '+str(day)+'일'
+
+    tomorrow_filter = []
+    draw = []
+    coming_soon = []
+    send_string = ''
+
+    for l in pre_links:
+        if l['day'].split(' ')[0] == str(month)+'월' and l['day'].split(' ')[1] == str(day):
+            tomorrow_filter.append(l)
+
+    for t in tomorrow_filter:
+        if t['time'].find('출시') > 0:
+            coming_soon.append(t)
+        else:
+            draw.append(t)
+
+    if len(draw) > 0:
+        send_string = '<b>[ 응모 예정 ]</b>\n'
+        for d in draw:
+            send_string += d['title']+'\n'
+
+    if len(coming_soon) > 0:
+        send_string += '\n<b>[ 출시 예정 ]</b>\n'
+        for c in coming_soon:
+            send_string += c['title']+'\n'
+
+    if send_string != '':
+        pre_string = day_month + ' 오전 10시 일정입니다.\n\n' + send_string
+        send_string = pre_string
+        send_string += ' \n < b > [URL] < /b >\nhttps: // www.nike.com/kr/launch /?type = upcoming'
+        send_telegram.send_telgm_string(
+            send_string, crawling_info.nikesnkrs_channel())
