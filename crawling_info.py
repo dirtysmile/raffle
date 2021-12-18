@@ -16,6 +16,10 @@ def get_instagram_bot_token():
     return json_data['instagram_bot_token']
 
 
+def get_hjreps_id():
+    return json_data['hjreps_id']
+
+
 def eomisae_channel():
     return json_data['eomisae_channel']
 

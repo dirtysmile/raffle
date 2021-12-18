@@ -9,7 +9,7 @@ logger = simple_logger.set_logger('telegramLog', 'test.log')
 def send_error(value):
     telgm_token = crawling_info.get_instagram_bot_token()
     bot = telegram.Bot(token=telgm_token)
-    bot.sendMessage(chat_id=crawling_info.bot(), text='장애 발생',
+    bot.sendMessage(chat_id=crawling_info.bot(), text=value,
                     parse_mode='HTML', disable_web_page_preview=True)
 
 

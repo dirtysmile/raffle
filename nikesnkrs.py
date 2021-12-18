@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import datetime as dt
+from selenium.common.exceptions import WebDriverException
 
 
 import open_chrome
@@ -23,7 +24,13 @@ def init_link():
     logger.info('start init link')
 
     driver = open_chrome.connect()
-    driver.get(url)
+    try:
+        driver.get(url)
+    except WebDriverException:
+        logger.warning("pageDown")
+        send_telegram.send_error("nike get url warning")
+        driver.close()
+        return
 
     titleAndTime = driver.find_elements(By.CLASS_NAME, "figcaption-content")
     linkAndDay = driver.find_elements(By.CLASS_NAME, "card-link")
@@ -53,7 +60,13 @@ def check_link():
     global now_links
 
     driver = open_chrome.connect()
-    driver.get(url)
+    try:
+        driver.get(url)
+    except WebDriverException:
+        logger.warning("pageDown")
+        send_telegram.send_error("nike get url warning")
+        driver.close()
+        return
 
     titleAndTime = driver.find_elements(By.CLASS_NAME, "figcaption-content")
     linkAndDay = driver.find_elements(By.CLASS_NAME, "card-link")
@@ -144,6 +157,7 @@ def run():
 
 
 def comming():
+    logger.info('comming...')
 
     date = dt.datetime.now()
 
@@ -178,8 +192,9 @@ def comming():
             send_string += c['title']+'\n'
 
     if send_string != '':
-        pre_string = day_month + ' 오전 10시 일정입니다.\n\n' + send_string
+        pre_string = day_month + ' 오전 10시 일정입니다.\n' + send_string
         send_string = pre_string
-        send_string += ' \n < b > [URL] < /b >\nhttps: // www.nike.com/kr/launch /?type = upcoming'
+        send_string += ' \n <b> [ URL ] </b>\nhttps://www.nike.com/kr/launch/?type=upcoming'
+
         send_telegram.send_telgm_string(
             send_string, crawling_info.nikesnkrs_channel())

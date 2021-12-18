@@ -5,22 +5,26 @@ import sys
 import logging
 
 import open_chrome
-import instagram
+import trash.instagram as instagram
 import eomisae
 import simple_logger
-import sneakerhouse
+import trash.sneakerhouse as sneakerhouse
 import nikesnkrs
+import send_telegram
+import hjreps
 
 
 def handle_exception(exc_type, exc_value, exc_traceback):
     logger = logging.getLogger("rich")
+
+    send_telegram.send_error('프로그램이 종료되었습니다.')
 
     logger.error("Unexpected exception", exc_info=(
         exc_type, exc_value, exc_traceback))
 
 
 if __name__ == '__main__':
-    logger = simple_logger.set_logger('rich', 'test.log')
+    logger = simple_logger.set_logger('rich', 'error.log')
     sys.excepthook = handle_exception
 
     driver = open_chrome.connect()
@@ -32,8 +36,10 @@ if __name__ == '__main__':
     # [나이키 SNKRS] 12시 18시 19시
     schedule.every().day.at("12:00:00").do(nikesnkrs.run)
     schedule.every().day.at("18:00:00").do(nikesnkrs.run)
-
     schedule.every().day.at("19:00:00").do(nikesnkrs.comming)
+
+    # 호랩 출첵
+    schedule.every().day.at("00:10:00").do(hjreps.run)
 
     # [스니커 하우스] 10시 14시 17시 20시
     # schedule.every().day.at("10:00:00").do(sneakerhouse.run, driver)
@@ -44,9 +50,11 @@ if __name__ == '__main__':
 
     # schedule.every(2).minutes.do(sneakerhouse.run, driver)
     # schedule.every(10).seconds.do(nikesnkrs.run)
+    # schedule.every(10).seconds.do(nikesnkrs.comming)
 
     eomisae.run()
     nikesnkrs.run()
+    hjreps.run()
     # sneakerhouse.run(driver)
 
     while True:
