@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 import datetime as dt
 from selenium.common.exceptions import WebDriverException
-
+import logging
 
 import open_chrome
 import send_telegram
@@ -11,7 +11,7 @@ import crawling_info
 import simple_logger
 
 
-logger = simple_logger.set_logger('snkrsLog', 'test.log')
+logger = logging.getLogger('MyLogger')
 pre_links = []
 now_links = []
 init_flg = False

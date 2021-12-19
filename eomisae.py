@@ -4,13 +4,15 @@ import schedule
 import time
 import numpy as np
 import datetime
+import logging
 
 import send_telegram
 import simple_logger
 import crawling_info
 import time_utils
 
-logger = simple_logger.set_logger('eomisaeLog', 'test.log')
+# logger = simple_logger.set_logger('eomisaeLog', 'test.log')
+logger = logging.getLogger('MyLogger')
 eomisae_home = 'https://eomisae.co.kr/dr'
 pre_links = []
 now_links = []

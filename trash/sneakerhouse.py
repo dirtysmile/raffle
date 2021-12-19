@@ -11,7 +11,7 @@ import simple_logger
 import crawling_info
 import time_utils
 
-logger = simple_logger.set_logger('sneakLog', 'test.log')
+logger = simple_logger.set_logger('MyLogger', 'test.log')
 pre_links = []
 now_links = []
 init_flg = False

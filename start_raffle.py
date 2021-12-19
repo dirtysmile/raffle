@@ -15,16 +15,17 @@ import hjreps
 
 
 def handle_exception(exc_type, exc_value, exc_traceback):
-    logger = logging.getLogger("rich")
-
-    send_telegram.send_error('프로그램이 종료되었습니다.')
+    logger = logging.getLogger('ErrorLogger')
 
     logger.error("Unexpected exception", exc_info=(
         exc_type, exc_value, exc_traceback))
+    send_telegram.send_error('프로그램이 종료되었습니다.')
 
 
 if __name__ == '__main__':
-    logger = simple_logger.set_logger('rich', 'error.log')
+    send_telegram.send_error('프로그램이 시작되었습니다.')
+    simple_logger.set_logger('ErrorLogger', 'error.log')
+    simple_logger.set_logger('MyLogger', 'test.log')
     sys.excepthook = handle_exception
 
     driver = open_chrome.connect()

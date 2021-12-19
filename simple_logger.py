@@ -15,6 +15,10 @@ def set_logger(logger_name, log_path) -> logging.Logger:
     )
     logger = logging.getLogger(logger_name)
 
+    # Check handler exists
+    if len(logger.handlers) > 0:
+        return logger  # Logger already exists
+
     file_handler = logging.FileHandler(log_path, mode="a", encoding="utf-8")
     file_handler.setFormatter(logging.Formatter(FILE_HANDLER_FORMAT))
     logger.addHandler(file_handler)

@@ -1,13 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import logging
 
 import crawling_info
 import simple_logger
 import open_chrome
 
 
-logger = simple_logger.set_logger('hjrepsLog', 'test.log')
+logger = logging.getLogger('MyLogger')
 
 
 def run():
