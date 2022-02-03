@@ -21,36 +21,21 @@ init_flg = False
 
 def init_link():
     global init_flg
-    logger.info("start init link")
+    try:
+        logger.info("start init link")
+        res = requests.get(eomisae_home)
+        soup = BeautifulSoup(res.content.decode(
+            'utf-8', 'replace'), 'html.parser')
+        links = soup.select('h3 .pjax')
 
-    res = requests.get(eomisae_home)
-    soup = BeautifulSoup(res.content.decode(
-        'utf-8', 'replace'), 'html.parser')
-    links = soup.select('h3 .pjax')
+        for link in links:
+            pre_links.append({'title': link.text, 'url': link['href']})
 
-    for link in links:
-        pre_links.append({'title': link.text, 'url': link['href']})
-
-    # del pre_links[0]
-    # del pre_links[0]
-
-    init_flg = True
-
-
-def check_link():
-    logger.info("check link")
-    if(time_utils.sleep()):
-        return
-
-    res = requests.get(eomisae_home)
-    soup = BeautifulSoup(res.content.decode(
-        'utf-8', 'replace'), 'html.parser')
-    links = soup.select('h3 .pjax')
-
-    for link in links:
-        now_links.append({'title': link.text, 'url': link['href']})
-
-    compare_link()
+        init_flg = True
+    except:
+        logger.error("접속 오류")
+        # del pre_links[0]
+        # del pre_links[0]
 
 
 def compare_link():
@@ -81,6 +66,24 @@ def compare_link():
 
     if(len(find) > 0):
         send_telegram.send_telgm(find, crawling_info.eomisae_channel())
+
+
+def check_link():
+    logger.info("check link")
+    if(time_utils.sleep()):
+        return
+    try:
+        res = requests.get(eomisae_home)
+        soup = BeautifulSoup(res.content.decode(
+            'utf-8', 'replace'), 'html.parser')
+        links = soup.select('h3 .pjax')
+
+        for link in links:
+            now_links.append({'title': link.text, 'url': link['href']})
+
+        compare_link()
+    except:
+        logger.error("접속 에러")
 
 
 def run():

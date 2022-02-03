@@ -1,0 +1,1372 @@
+[2021-12-19 07:09:40,495]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 57, in <module>
+    hjreps.run()
+  File "/Users/thkim/Coding/raffle/hjreps.py", line 29, in run
+KeyboardInterrupt
+[2021-12-19 07:10:27,547]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 57, in <module>
+    hjreps.run()
+  File "/Users/thkim/Coding/raffle/hjreps.py", line 27, in run
+    driver.find_element_by_xpath(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 81, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 710, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 422, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 421, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 443, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+[2021-12-19 07:10:48,713]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 56, in <module>
+    nikesnkrs.run()
+  File "/Users/thkim/Coding/raffle/nikesnkrs.py", line 154, in run
+    init_link()
+  File "/Users/thkim/Coding/raffle/nikesnkrs.py", line 26, in init_link
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/open_chrome.py", line 24, in connect
+    time.sleep(10)
+KeyboardInterrupt
+[2021-12-19 07:12:42,924]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 57, in <module>
+    hjreps.run()
+  File "/Users/thkim/Coding/raffle/hjreps.py", line 30, in run
+    time.sleep(60)
+KeyboardInterrupt
+[2021-12-19 21:46:38,456]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 61, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 42, in check_link
+    if(time_utils.sleep()):
+  File "/Users/thkim/Coding/raffle/time_utils.py", line 16, in sleep
+    time.sleep(600)
+KeyboardInterrupt
+[2021-12-20 07:36:44,355]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+KeyboardInterrupt
+[2021-12-20 07:39:16,376]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 58, in <module>
+    hjreps.run()
+  File "/Users/thkim/Coding/raffle/hjreps.py", line 33, in run
+    time.sleep(60)
+KeyboardInterrupt
+[2021-12-21 16:54:02,230]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f8ea23acf40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8ea23acf40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8ea23acf40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2021-12-21 17:45:25,839]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 63, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+[2021-12-22 06:23:24,407]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 42, in check_link
+    if(time_utils.sleep()):
+  File "/Users/thkim/Coding/raffle/time_utils.py", line 16, in sleep
+    time.sleep(600)
+KeyboardInterrupt
+[2021-12-22 06:23:30,180]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 42, in check_link
+    if(time_utils.sleep()):
+  File "/Users/thkim/Coding/raffle/time_utils.py", line 16, in sleep
+    time.sleep(600)
+KeyboardInterrupt
+[2021-12-25 06:28:46,824]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 42, in check_link
+    if(time_utils.sleep()):
+  File "/Users/thkim/Coding/raffle/time_utils.py", line 16, in sleep
+    time.sleep(600)
+KeyboardInterrupt
+[2021-12-25 11:24:09,286]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 63, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+[2021-12-25 15:22:46,963]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 416, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+[2021-12-29 11:37:32,503]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 416, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+[2021-12-29 11:38:06,048]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 416, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 56, in <module>
+    eomisae.run()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 88, in run
+    init_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 26, in init_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+[2021-12-29 14:42:26,476]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 416, in connect
+    self.sock = ssl_wrap_socket(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+[2021-12-31 11:10:59,268]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fab24aef7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fab24aef7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fab24aef7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2021-12-31 17:14:31,698]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff42c52fac0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff42c52fac0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff42c52fac0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-02 13:26:18,817]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fb8bfe0aa30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb8bfe0aa30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 62, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb8bfe0aa30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-03 19:10:03,039]	ERROR	[start_raffle.py:handle_exception:20]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/start_raffle.py", line 63, in <module>
+KeyboardInterrupt
+[2022-01-05 17:04:13,432]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd96c2431f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd96c2431f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd96c2431f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-06 17:24:11,938]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fca5fdd0a00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fca5fdd0a00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fca5fdd0a00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-08 18:58:59,030]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd417183550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd417183550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd417183550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-10 11:00:14,022]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2022-01-12 12:49:02,339]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ffbfc3ea5b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ffbfc3ea5b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ffbfc3ea5b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-12 17:07:05,062]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc394ca23d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc394ca23d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc394ca23d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-13 01:44:55,416]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 55, in <module>
+    nikesnkrs.run()
+  File "/Users/thkim/Coding/raffle/pythonModule/nikesnkrs.py", line 154, in run
+    init_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/nikesnkrs.py", line 26, in init_link
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 24, in connect
+    time.sleep(10)
+KeyboardInterrupt
+[2022-01-13 09:31:48,444]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa215323790>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa215323790>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 90, in run
+    check_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/eomisae.py", line 45, in check_link
+    res = requests.get(eomisae_home)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eomisae.co.kr', port=443): Max retries exceeded with url: /dr (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa215323790>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-01-13 13:47:38,145]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 61, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+[2022-01-20 17:44:37,273]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 61, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+[2022-01-21 00:24:22,930]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 20, in run
+    driver.find_element_by_name('mb_id').send_keys(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 664, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="mb_id"]"}
+  (Session info: headless chrome=97.0.4692.71)
+Stacktrace:
+0   chromedriver                        0x0000000100d25269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000100cb0c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010086de28 chromedriver + 171560
+3   chromedriver                        0x00000001008a33d2 chromedriver + 390098
+4   chromedriver                        0x00000001008a3591 chromedriver + 390545
+5   chromedriver                        0x00000001008d56b4 chromedriver + 595636
+6   chromedriver                        0x00000001008c09fd chromedriver + 510461
+7   chromedriver                        0x00000001008d3462 chromedriver + 586850
+8   chromedriver                        0x00000001008c0c23 chromedriver + 511011
+9   chromedriver                        0x000000010089675e chromedriver + 337758
+10  chromedriver                        0x0000000100897a95 chromedriver + 342677
+11  chromedriver                        0x0000000100ce18ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x0000000100cf8863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x0000000100cfdc7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x0000000100cf9bba __gxx_personality_v0 + 404890
+15  chromedriver                        0x0000000100cd5e51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x0000000100d15158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x0000000100d152e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x0000000100d2c6f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007fff203938fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2038f443 thread_start + 15
+
+[2022-01-22 00:11:56,955]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 27, in run
+    driver.find_element_by_xpath(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 520, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="thema_wrapper"]/div/aside[1]/section/div[1]/div[3]/a[3]"}
+  (Session info: headless chrome=97.0.4692.99)
+Stacktrace:
+0   chromedriver                        0x0000000105523269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x00000001054aec33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010506be28 chromedriver + 171560
+3   chromedriver                        0x00000001050a13d2 chromedriver + 390098
+4   chromedriver                        0x00000001050a1591 chromedriver + 390545
+5   chromedriver                        0x00000001050d36b4 chromedriver + 595636
+6   chromedriver                        0x00000001050be9fd chromedriver + 510461
+7   chromedriver                        0x00000001050d1462 chromedriver + 586850
+8   chromedriver                        0x00000001050bec23 chromedriver + 511011
+9   chromedriver                        0x000000010509475e chromedriver + 337758
+10  chromedriver                        0x0000000105095a95 chromedriver + 342677
+11  chromedriver                        0x00000001054df8ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x00000001054f6863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x00000001054fbc7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x00000001054f7bba __gxx_personality_v0 + 404890
+15  chromedriver                        0x00000001054d3e51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x0000000105513158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x00000001055132e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010552a6f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007fff203938fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2038f443 thread_start + 15
+
+[2022-01-25 00:11:52,584]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 20, in run
+    driver.find_element_by_name('mb_id').send_keys(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 664, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="mb_id"]"}
+  (Session info: headless chrome=97.0.4692.99)
+Stacktrace:
+0   chromedriver                        0x000000010667c269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000106607c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x00000001061c4e28 chromedriver + 171560
+3   chromedriver                        0x00000001061fa3d2 chromedriver + 390098
+4   chromedriver                        0x00000001061fa591 chromedriver + 390545
+5   chromedriver                        0x000000010622c6b4 chromedriver + 595636
+6   chromedriver                        0x00000001062179fd chromedriver + 510461
+7   chromedriver                        0x000000010622a462 chromedriver + 586850
+8   chromedriver                        0x0000000106217c23 chromedriver + 511011
+9   chromedriver                        0x00000001061ed75e chromedriver + 337758
+10  chromedriver                        0x00000001061eea95 chromedriver + 342677
+11  chromedriver                        0x00000001066388ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010664f863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x0000000106654c7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x0000000106650bba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010662ce51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010666c158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010666c2e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x00000001066836f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007fff203938fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2038f443 thread_start + 15
+
+[2022-01-31 00:19:50,605]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 20, in run
+    driver.find_element_by_name('mb_id').send_keys(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 664, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="mb_id"]"}
+  (Session info: headless chrome=97.0.4692.99)
+Stacktrace:
+0   chromedriver                        0x000000010bb73269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010bafec33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010b6bbe28 chromedriver + 171560
+3   chromedriver                        0x000000010b6f13d2 chromedriver + 390098
+4   chromedriver                        0x000000010b6f1591 chromedriver + 390545
+5   chromedriver                        0x000000010b7236b4 chromedriver + 595636
+6   chromedriver                        0x000000010b70e9fd chromedriver + 510461
+7   chromedriver                        0x000000010b721462 chromedriver + 586850
+8   chromedriver                        0x000000010b70ec23 chromedriver + 511011
+9   chromedriver                        0x000000010b6e475e chromedriver + 337758
+10  chromedriver                        0x000000010b6e5a95 chromedriver + 342677
+11  chromedriver                        0x000000010bb2f8ab __gxx_personality_v0 + 305803
+12  chromedriver                        0x000000010bb46863 __gxx_personality_v0 + 399939
+13  chromedriver                        0x000000010bb4bc7f __gxx_personality_v0 + 421471
+14  chromedriver                        0x000000010bb47bba __gxx_personality_v0 + 404890
+15  chromedriver                        0x000000010bb23e51 __gxx_personality_v0 + 258097
+16  chromedriver                        0x000000010bb63158 __gxx_personality_v0 + 516920
+17  chromedriver                        0x000000010bb632e1 __gxx_personality_v0 + 517313
+18  chromedriver                        0x000000010bb7a6f8 __gxx_personality_v0 + 612568
+19  libsystem_pthread.dylib             0x00007fff204108fc _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2040c443 thread_start + 15
+
+[2022-02-03 00:15:22,624]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 60, in <module>
+    schedule.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/schedule/__init__.py", line 661, in run
+    ret = self.job_func()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 17, in run
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000105e0b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000105d96c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x0000000105953e28 chromedriver + 171560
+3   chromedriver                        0x000000010597a433 chromedriver + 328755
+4   chromedriver                        0x0000000105975ff6 chromedriver + 311286
+5   chromedriver                        0x00000001059726c6 chromedriver + 296646
+6   chromedriver                        0x00000001059ac9c3 chromedriver + 534979
+7   chromedriver                        0x00000001059a6723 chromedriver + 509731
+8   chromedriver                        0x000000010597c75e chromedriver + 337758
+9   chromedriver                        0x000000010597da95 chromedriver + 342677
+10  chromedriver                        0x0000000105dc78ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x0000000105dde863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x0000000105de3c7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x0000000105ddfbba __gxx_personality_v0 + 404890
+14  chromedriver                        0x0000000105dbbe51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x0000000105dfb158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x0000000105dfb2e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x0000000105e126f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff2045d8fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20459443 thread_start + 15
+

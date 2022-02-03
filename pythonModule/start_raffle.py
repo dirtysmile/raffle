@@ -5,10 +5,8 @@ import sys
 import logging
 
 import open_chrome
-import trash.instagram as instagram
 import eomisae
 import simple_logger
-import trash.sneakerhouse as sneakerhouse
 import nikesnkrs
 import send_telegram
 import hjreps
@@ -35,9 +33,9 @@ if __name__ == '__main__':
     schedule.every(2).minutes.do(eomisae.run)
 
     # [나이키 SNKRS] 12시 18시 19시
-    schedule.every().day.at("12:00:00").do(nikesnkrs.run)
-    schedule.every().day.at("18:00:00").do(nikesnkrs.run)
-    schedule.every().day.at("19:00:00").do(nikesnkrs.comming)
+    # schedule.every().day.at("12:00:00").do(nikesnkrs.run)
+    # schedule.every().day.at("18:00:00").do(nikesnkrs.run)
+    # schedule.every().day.at("19:00:00").do(nikesnkrs.comming)
 
     # 호랩 출첵
     schedule.every().day.at("00:10:00").do(hjreps.run)

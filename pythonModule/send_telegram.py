@@ -23,9 +23,13 @@ def send_telgm(recent, channel):
     logger.info(send_text)
 
     telgm_token = crawling_info.get_instagram_bot_token()
-    bot = telegram.Bot(token=telgm_token)
-    bot.sendMessage(chat_id=channel, text=send_text,
-                    parse_mode='HTML', disable_web_page_preview=True)
+
+    try:
+        bot = telegram.Bot(token=telgm_token)
+        bot.sendMessage(chat_id=channel, text=send_text,
+                        parse_mode='HTML', disable_web_page_preview=True)
+    except:
+        logger.error("텔레그램 전송 에러")
 
     recent.clear()
 
