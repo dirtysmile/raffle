@@ -15,6 +15,14 @@ spring:
 #        show_sql: true (시스템 아웃으로 출력된다)
         format_sql: true
 
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    url: jdbc:postgresql://localhost:5432/raffle
+    user: raffle
+    password: password
+    locations: classpath:db/migration,classpath:db/callback
+
 logging:
   config: classpath:log4j2.xml
   level:
