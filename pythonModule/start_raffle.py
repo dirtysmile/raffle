@@ -26,7 +26,7 @@ if __name__ == '__main__':
     simple_logger.set_logger('MyLogger', 'test.log')
     sys.excepthook = handle_exception
 
-    driver = open_chrome.connect()
+    # driver = open_chrome.connect()
 
     schedule.clear()
     # [어미새] 2분
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     # schedule.every().day.at("19:00:00").do(nikesnkrs.comming)
 
     # 호랩 출첵
-    schedule.every().day.at("00:10:00").do(hjreps.run)
+    # schedule.every().day.at("00:10:00").do(hjreps.run)
 
     # [스니커 하우스] 10시 14시 17시 20시
     # schedule.every().day.at("10:00:00").do(sneakerhouse.run, driver)
@@ -52,8 +52,8 @@ if __name__ == '__main__':
     # schedule.every(10).seconds.do(nikesnkrs.comming)
 
     eomisae.run()
-    nikesnkrs.run()
-    hjreps.run()
+    # nikesnkrs.run()
+    # hjreps.run()
     # sneakerhouse.run(driver)
 
     while True:

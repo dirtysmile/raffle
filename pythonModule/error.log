@@ -1370,3 +1370,313 @@ Stacktrace:
 18  libsystem_pthread.dylib             0x00007fff2045d8fc _pthread_start + 224
 19  libsystem_pthread.dylib             0x00007fff20459443 thread_start + 15
 
+[2022-02-04 09:26:37,159]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 29, in <module>
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010543e269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x00000001053c9c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x0000000104f86e28 chromedriver + 171560
+3   chromedriver                        0x0000000104fad433 chromedriver + 328755
+4   chromedriver                        0x0000000104fa8ff6 chromedriver + 311286
+5   chromedriver                        0x0000000104fa56c6 chromedriver + 296646
+6   chromedriver                        0x0000000104fdf9c3 chromedriver + 534979
+7   chromedriver                        0x0000000104fd9723 chromedriver + 509731
+8   chromedriver                        0x0000000104faf75e chromedriver + 337758
+9   chromedriver                        0x0000000104fb0a95 chromedriver + 342677
+10  chromedriver                        0x00000001053fa8ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x0000000105411863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x0000000105416c7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x0000000105412bba __gxx_personality_v0 + 404890
+14  chromedriver                        0x00000001053eee51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x000000010542e158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x000000010542e2e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x00000001054456f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204408fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff2043c443 thread_start + 15
+
+[2022-02-04 09:26:45,585]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 29, in <module>
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010ae4f269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010addac33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010a997e28 chromedriver + 171560
+3   chromedriver                        0x000000010a9be433 chromedriver + 328755
+4   chromedriver                        0x000000010a9b9ff6 chromedriver + 311286
+5   chromedriver                        0x000000010a9b66c6 chromedriver + 296646
+6   chromedriver                        0x000000010a9f09c3 chromedriver + 534979
+7   chromedriver                        0x000000010a9ea723 chromedriver + 509731
+8   chromedriver                        0x000000010a9c075e chromedriver + 337758
+9   chromedriver                        0x000000010a9c1a95 chromedriver + 342677
+10  chromedriver                        0x000000010ae0b8ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x000000010ae22863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x000000010ae27c7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x000000010ae23bba __gxx_personality_v0 + 404890
+14  chromedriver                        0x000000010adffe51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x000000010ae3f158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x000000010ae3f2e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x000000010ae566f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204408fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff2043c443 thread_start + 15
+
+[2022-02-04 09:27:36,488]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 29, in <module>
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010a00b269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000109f96c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x0000000109b53e28 chromedriver + 171560
+3   chromedriver                        0x0000000109b7a433 chromedriver + 328755
+4   chromedriver                        0x0000000109b75ff6 chromedriver + 311286
+5   chromedriver                        0x0000000109b726c6 chromedriver + 296646
+6   chromedriver                        0x0000000109bac9c3 chromedriver + 534979
+7   chromedriver                        0x0000000109ba6723 chromedriver + 509731
+8   chromedriver                        0x0000000109b7c75e chromedriver + 337758
+9   chromedriver                        0x0000000109b7da95 chromedriver + 342677
+10  chromedriver                        0x0000000109fc78ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x0000000109fde863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x0000000109fe3c7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x0000000109fdfbba __gxx_personality_v0 + 404890
+14  chromedriver                        0x0000000109fbbe51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x0000000109ffb158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x0000000109ffb2e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x000000010a0126f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204408fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff2043c443 thread_start + 15
+
+[2022-02-04 09:29:04,474]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 29, in <module>
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000101aa6269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000101a31c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x00000001015eee28 chromedriver + 171560
+3   chromedriver                        0x0000000101615433 chromedriver + 328755
+4   chromedriver                        0x0000000101610ff6 chromedriver + 311286
+5   chromedriver                        0x000000010160d6c6 chromedriver + 296646
+6   chromedriver                        0x00000001016479c3 chromedriver + 534979
+7   chromedriver                        0x0000000101641723 chromedriver + 509731
+8   chromedriver                        0x000000010161775e chromedriver + 337758
+9   chromedriver                        0x0000000101618a95 chromedriver + 342677
+10  chromedriver                        0x0000000101a628ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x0000000101a79863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x0000000101a7ec7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x0000000101a7abba __gxx_personality_v0 + 404890
+14  chromedriver                        0x0000000101a56e51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x0000000101a96158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x0000000101a962e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x0000000101aad6f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204408fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff2043c443 thread_start + 15
+
+[2022-02-04 09:31:06,284]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 29, in <module>
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x0000000104e76269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x0000000104e01c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x00000001049bee28 chromedriver + 171560
+3   chromedriver                        0x00000001049e5433 chromedriver + 328755
+4   chromedriver                        0x00000001049e0ff6 chromedriver + 311286
+5   chromedriver                        0x00000001049dd6c6 chromedriver + 296646
+6   chromedriver                        0x0000000104a179c3 chromedriver + 534979
+7   chromedriver                        0x0000000104a11723 chromedriver + 509731
+8   chromedriver                        0x00000001049e775e chromedriver + 337758
+9   chromedriver                        0x00000001049e8a95 chromedriver + 342677
+10  chromedriver                        0x0000000104e328ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x0000000104e49863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x0000000104e4ec7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x0000000104e4abba __gxx_personality_v0 + 404890
+14  chromedriver                        0x0000000104e26e51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x0000000104e66158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x0000000104e662e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x0000000104e7d6f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204988fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20494443 thread_start + 15
+
+[2022-02-04 09:32:44,765]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 55, in <module>
+    nikesnkrs.run()
+  File "/Users/thkim/Coding/raffle/pythonModule/nikesnkrs.py", line 154, in run
+    init_link()
+  File "/Users/thkim/Coding/raffle/pythonModule/nikesnkrs.py", line 26, in init_link
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010c840269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010c7cbc33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010c388e28 chromedriver + 171560
+3   chromedriver                        0x000000010c3af433 chromedriver + 328755
+4   chromedriver                        0x000000010c3aaff6 chromedriver + 311286
+5   chromedriver                        0x000000010c3a76c6 chromedriver + 296646
+6   chromedriver                        0x000000010c3e19c3 chromedriver + 534979
+7   chromedriver                        0x000000010c3db723 chromedriver + 509731
+8   chromedriver                        0x000000010c3b175e chromedriver + 337758
+9   chromedriver                        0x000000010c3b2a95 chromedriver + 342677
+10  chromedriver                        0x000000010c7fc8ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x000000010c813863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x000000010c818c7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x000000010c814bba __gxx_personality_v0 + 404890
+14  chromedriver                        0x000000010c7f0e51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x000000010c830158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x000000010c8302e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x000000010c8476f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204988fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20494443 thread_start + 15
+
+[2022-02-04 09:33:03,311]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 56, in <module>
+    hjreps.run()
+  File "/Users/thkim/Coding/raffle/pythonModule/hjreps.py", line 17, in run
+    driver = open_chrome.connect()
+  File "/Users/thkim/Coding/raffle/pythonModule/open_chrome.py", line 15, in connect
+    driver = webdriver.Chrome(chromedriver, chrome_options=options)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 70, in __init__
+    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/chromium/webdriver.py", line 93, in __init__
+    RemoteWebDriver.__init__(
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 268, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 359, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "/Users/thkim/opt/anaconda3/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.80 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Stacktrace:
+0   chromedriver                        0x000000010aa87269 __gxx_personality_v0 + 582729
+1   chromedriver                        0x000000010aa12c33 __gxx_personality_v0 + 106003
+2   chromedriver                        0x000000010a5cfe28 chromedriver + 171560
+3   chromedriver                        0x000000010a5f6433 chromedriver + 328755
+4   chromedriver                        0x000000010a5f1ff6 chromedriver + 311286
+5   chromedriver                        0x000000010a5ee6c6 chromedriver + 296646
+6   chromedriver                        0x000000010a6289c3 chromedriver + 534979
+7   chromedriver                        0x000000010a622723 chromedriver + 509731
+8   chromedriver                        0x000000010a5f875e chromedriver + 337758
+9   chromedriver                        0x000000010a5f9a95 chromedriver + 342677
+10  chromedriver                        0x000000010aa438ab __gxx_personality_v0 + 305803
+11  chromedriver                        0x000000010aa5a863 __gxx_personality_v0 + 399939
+12  chromedriver                        0x000000010aa5fc7f __gxx_personality_v0 + 421471
+13  chromedriver                        0x000000010aa5bbba __gxx_personality_v0 + 404890
+14  chromedriver                        0x000000010aa37e51 __gxx_personality_v0 + 258097
+15  chromedriver                        0x000000010aa77158 __gxx_personality_v0 + 516920
+16  chromedriver                        0x000000010aa772e1 __gxx_personality_v0 + 517313
+17  chromedriver                        0x000000010aa8e6f8 __gxx_personality_v0 + 612568
+18  libsystem_pthread.dylib             0x00007fff204988fc _pthread_start + 224
+19  libsystem_pthread.dylib             0x00007fff20494443 thread_start + 15
+
+[2022-02-06 15:36:28,973]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 61, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+[2022-02-06 15:45:13,736]	ERROR	[start_raffle.py:handle_exception:18]	>> Unexpected exception
+Traceback (most recent call last):
+  File "/Users/thkim/Coding/raffle/pythonModule/start_raffle.py", line 61, in <module>
+    time.sleep(1)
+KeyboardInterrupt

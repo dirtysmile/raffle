@@ -24,17 +24,23 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-quartz'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-jul', version: '2.17.1'
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.17.1'
-	implementation 'org.springframework.boot:spring-boot-starter-quartz'
+
 	implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+	implementation group: 'org.json', name: 'json', version: '20210307'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.7'
+
 }
 
 test {
