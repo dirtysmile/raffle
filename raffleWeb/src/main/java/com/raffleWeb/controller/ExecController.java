@@ -21,8 +21,20 @@ public class ExecController {
         executeShellService.excute((String)p.get("cmd"));
     }
 
+    @PostMapping("/test")
+    public HashMap test3(@RequestBody HashMap p){
+        System.out.println(p);
+        return p;
+    }
 
     @GetMapping("/")
     public void test2(){
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
+        System.out.println("test");
     }
 }

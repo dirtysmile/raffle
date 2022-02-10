@@ -2,11 +2,16 @@ plugins {
 	id 'org.springframework.boot' version '2.6.2'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'org.asciidoctor.convert' version '1.5.9.2'
+	id 'com.epages.restdocs-api-spec' version '0.11.3' //swagger 설정
 }
 
 group = 'com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+
+
+
 
 configurations {
 	all {
@@ -20,6 +25,13 @@ configurations {
 repositories {
 	mavenCentral()
 }
+
+ext {
+	// 스니펫 생성 위치 변수에 저장
+	set('snippetsDir', file("build/generated-snippets"))
+}
+
+
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -41,8 +53,59 @@ dependencies {
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.7'
 	implementation group: 'org.flywaydb', name: 'flyway-core', version: '8.4.4'
+
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.3'
+
+	asciidoctor 'org.springframework.restdocs:spring-restdocs-asciidoctor'
+//	testImplementation 'org.springframework.restdocs:spring-restdocs-restassured'
+	testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+	testCompile('com.epages:restdocs-api-spec-mockmvc:0.11.3') //swagger 설정 2
 }
 
+
+
+
 test {
+	outputs.dir snippetsDir
 	useJUnitPlatform()
 }
+
+
+asciidoctor {
+	inputs.dir snippetsDir
+	dependsOn test
+}
+
+asciidoctor.doFirst {
+	println("---------------- delete present asciidoctor.")
+	delete file('src/main/resources/static/docs')
+}
+
+task copyDocument(type: Copy) {
+	dependsOn asciidoctor
+	from file("build/asciidoc/html5")
+	into file("src/main/resources/static/docs")
+}
+
+openapi3 {
+	server = 'http://localhost:8080'
+	title = 'My API'
+	description = 'My API description'
+	version = '0.1.0'
+	format = 'yaml'
+
+	copy{
+		from "build/api-spec"
+		into "src/main/resources/static/docs"
+	}
+}
+
+
+bootRun {
+	dependsOn copyDocument
+}
+
+
+
+
+

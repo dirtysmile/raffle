@@ -8,11 +8,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserService {
 
-    private final TestService1 testService1;
-
     public boolean isEmailExists(String email){
         System.out.println("estest");
-        testService1.test1();
         return false;
     }
 

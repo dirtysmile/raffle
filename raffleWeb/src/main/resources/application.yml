@@ -16,7 +16,7 @@ spring:
         format_sql: true
 
   flyway:
-    enabled: true
+    enabled: false
     baseline-on-migrate: true
     url: jdbc:postgresql://localhost:5432/raffle
     user: raffle

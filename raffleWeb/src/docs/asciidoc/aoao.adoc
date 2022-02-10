@@ -1,0 +1,22 @@
+= Spring REST Docs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+[[resources-post]]
+== Schedule
+
+[[resources-post-create]]
+=== Schedule 활성화
+
+==== Request Fields
+
+include::{snippets}/active/request-fields.adoc[]
+
+==== HTTP request
+
+include::{snippets}/active/http-request.adoc[]
+
+==== HTTP response
+
+include::{snippets}/active/http-response.adoc[]
